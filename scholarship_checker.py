@@ -5,3 +5,4 @@ def is_eligible_for_scholarship(gpa, family_income):
         raise ValueError("Income cannot be negative")
     
     return gpa >= 3.5 and family_income <= 20000
+
