@@ -8,6 +8,9 @@ class TestScholarshipEligibility(unittest.TestCase):
         self.assertTrue(is_eligible_for_scholarship(3.8, 15000))
 
     def test_low_gpa(self):
+        self.assertFalse(is_eligible_for_scholarship(3.0, 25000))
+
+    def test_high_income(self):
         self.assertFalse(is_eligible_for_scholarship(3.6, 21000))
 
 if __name__ == '__main__':
