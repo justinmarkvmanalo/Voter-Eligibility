@@ -26,5 +26,6 @@ class TestScholarshipEligibility(unittest.TestCase):
         with self.assertRaises(ValueError):
             is_eligible_for_scholarship(3.8, -5000)
 
+
 if __name__ == "__main__":
     unittest.main()
