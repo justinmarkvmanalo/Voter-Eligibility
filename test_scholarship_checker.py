@@ -18,6 +18,9 @@ class TestScholarshipEligibility(unittest.TestCase):
     def test_exact_threshold(self):
         self.assertTrue(is_eligible_for_scholarship(3.5, 20000))
 
+    def test_invalid_gpa(self):
+        with self.assertRaises(ValueError):
+            is_eligible_for_scholarship(4.5, 21000)
 
 if __name__ == "__main__":
     unittest.main()
