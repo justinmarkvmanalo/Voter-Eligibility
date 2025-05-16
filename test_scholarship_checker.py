@@ -1,6 +1,7 @@
 import unittest
 from scholarship_checker import is_eligible_for_scholarship
 
+
 class TestScholarshipEligibility(unittest.TestCase):
 
     def test_eligible_student(self):
@@ -20,4 +21,3 @@ class TestScholarshipEligibility(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
