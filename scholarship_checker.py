@@ -1,3 +1,4 @@
+
 def is_eligible_for_scholarship(gpa, family_income):
     if gpa < 0.0 or gpa > 4.0:
         raise ValueError("Invalid GPA")
